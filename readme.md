@@ -57,23 +57,31 @@ for prediction in predictions:
 
 ### Example of an Uncertainty-Based Reject
 **Uncertain Reject-for this instance**
+
 {'age': '40-49', 'marital status': 'Married', 'education': 'Associate Degree', 'workinghours': '40-49', 'workclass': 'private', 'occupation': 'Repair/Maintenance', 'race': 'Black or African American alone', 'sex': 'Male'}
 
 **Prediction that would have been made:** low
+
 **Prediction Probability:** 0.503
 
 
 ### Example of an Unfairness-Based Reject
 **Unfairness Reject-for this instance**
+
 {'age': '50-59', 'marital status': 'Married', 'education': 'Started College, No Diploma', 'workinghours': '40-49', 'workclass': 'governmental', 'occupation': 'Office/Administrative Support', 'race': 'White alone', 'sex': 'Female'}
 
 **Prediction that would have been made:** low
+
 **Prediction Probability:** 0.717
+
 **Rejection Based on this Discriminatory Pattern**
 (education = Started College, No Diploma AND sex = Female AND age = 50-59) -> (income = low), Support: 0.021, Confidence: 0.899, Lift: 0.000, SLift: 0.525
+
 **Situation Testing Score:** 0.90
+
 **Closest neighbours from favoured group:**
 [216, 1039, 2585, 515, 2027, 784, 1089, 1307, 1311, 1320]
+
 **Closest neighbours from non favoured groups:**
 [1249, 2281, 2507, 1156, 1737, 2216, 455, 2029, 2014, 2541]
 
