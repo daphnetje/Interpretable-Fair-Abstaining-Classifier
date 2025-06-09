@@ -57,9 +57,9 @@ for prediction in predictions:
 
 ### Example of an Uncertainty-Based Reject
 **Uncertain Reject-for this instance**
-
+```sh 
 {'age': '40-49', 'marital status': 'Married', 'education': 'Associate Degree', 'workinghours': '40-49', 'workclass': 'private', 'occupation': 'Repair/Maintenance', 'race': 'Black or African American alone', 'sex': 'Male'}
-
+```
 **Prediction that would have been made:** low
 
 **Prediction Probability:** 0.503
@@ -67,9 +67,9 @@ for prediction in predictions:
 
 ### Example of an Unfairness-Based Reject
 **Unfairness Reject-for this instance**
-
+```sh 
 {'age': '50-59', 'marital status': 'Married', 'education': 'Started College, No Diploma', 'workinghours': '40-49', 'workclass': 'governmental', 'occupation': 'Office/Administrative Support', 'race': 'White alone', 'sex': 'Female'}
-
+```
 **Prediction that would have been made:** low
 
 **Prediction Probability:** 0.717
